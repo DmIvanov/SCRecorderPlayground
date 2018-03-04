@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0092C7561967A3652BA67D7765D51D47 /* SCRecorderTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B4528AD84D324CE8FB802C5F6D8E /* SCRecorderTools.m */; };
+		0291BFCBFBA4D7798161F0A57D82402A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
+		06B46ADD0952B30E2FC617E7BD53ABB1 /* SCAudioConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E9611DF7D3AB4148B5ABBD8599939D /* SCAudioConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DB761E40AB1F3981FF6AEF4B285556A /* SCSaveToCameraRollOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C59412D4E384C44D351540B3AA2C9204 /* SCSaveToCameraRollOperation.m */; };
+		192CE7C6EE547EE6F10567C470234FE7 /* SCRecordSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 8303B9D46144C4D122765F470B3C5B8C /* SCRecordSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7B91421B1B39AC96B358928BBF4ED8 /* Pods-PhotoVideoPlayground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7E1AE8CF10BC58C00356B33517C91C /* Pods-PhotoVideoPlayground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216E888ADFCFFBB848B26DBB9B982CA9 /* SCSampleBufferHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F4E5C8CA0192B662D209471FA01B67 /* SCSampleBufferHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233E361ACF882D381E33F5E500ABD142 /* SCRecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6526ABBD46380F9440FFE7AEA104B /* SCRecorder-dummy.m */; };
+		2D54CBE7ADA9473307E138B1D2ADC459 /* SCRecorderTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 574B0A489E0C52AABD850361FF179995 /* SCRecorderTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3EB27E8B276D35DD86664E1402B9A6 /* SCFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5242719F379ECC5E2FFEEEBA684A9DAF /* SCFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320A6B586F8DD01DB0710357A4FFC943 /* SCFilterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D32A98658CD8B3D4C85DB5DD5CFF9733 /* SCFilterImageView.m */; };
+		33186E9657B41836943BB296B0DFC044 /* NSURL+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 668273EE0F3A10548C5EDCC0569C1C23 /* NSURL+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335AD6FD34E5969579E18DBD97D2CB44 /* SCRecordSessionSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378176D598E8CC6E2B8ABB004B1E883 /* SCRecordSessionSegment.m */; };
+		3C693BFC0E7EB87E38A6502A2682E7F8 /* SCRecorderFocusTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083D3B56A4E579361FDF76351C97915 /* SCRecorderFocusTargetView.m */; };
+		3F013C00354D04D4618439BF61ED9467 /* SCFilter+VideoComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3310C1FBC585DB2D3342A957AD64274F /* SCFilter+VideoComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4105B14B644BAE058E10594660F11C35 /* SCFilter+VideoComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = E833961C309E1983856399D23D24B8C3 /* SCFilter+VideoComposition.m */; };
+		41E1589E6F5478564997139F9F794EFC /* UIImage+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 2017A16B419996596C7F7228BB5B509E /* UIImage+SCSaveToCameraRoll.m */; };
+		4269E5A647CE94D02C3BE5D273822F9E /* UIImage+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = E07A87FA067B1BF2CFB3197D35B22DD3 /* UIImage+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43815B3CBE32AA442E77230BDF8F17BB /* Pods-PhotoVideoPlaygroundTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9B6684C2436494B877B28478E75E17 /* Pods-PhotoVideoPlaygroundTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4638DCC4B9B68E351BD87725F0B9BA8A /* SCSwipeableFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FCF13F686F3BA53620D69F9C0CB6D9 /* SCSwipeableFilterView.m */; };
+		47BE9C2E24365A19F5ACD7607C35B234 /* SCAudioConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0577F42816911AF9478471AB9C7AC4 /* SCAudioConfiguration.m */; };
+		4E04A78B93B27E57F3D820F1BF59CD57 /* SCFilterImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = B1CD300C770A1F6D065A02F943EE333F /* SCFilterImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3A03CE898403C952B76C03ECC2A97C /* SCIOPixelBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6527615877D0A94282B5D5AA74B3F378 /* SCIOPixelBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5793E8C9F031254F0E9EBF364C8A6FF8 /* SCRecordSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC9674E4BFCCE9A34BDCD57862226A /* SCRecordSession.m */; };
+		58BCB546D0C530A2D581C900D2F9278F /* SCRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B3187FAF9EBCB007294DA0183958064 /* SCRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5956FF18A99AC5CEF80E929D9FA4FB50 /* SCAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 208FB5083517106F147316796D9F49B2 /* SCAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB98DE2E405D219E09F97759DCC9588 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C321C3469E0A3C339DE3B9B620326 /* SCWeakSelectorTarget.m */; };
+		62A8EFE16992112BB5857AAE5D219E7E /* SCRecorderToolsView.h in Headers */ = {isa = PBXBuildFile; fileRef = E5FB413F138CB591EE1AD69311AADA19 /* SCRecorderToolsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E0FFE4B1468B9A6E59AAF943DD00D1 /* SCMediaTypeConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C169D130258065C8882E28C5B503A17 /* SCMediaTypeConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68067F3AEF01BC0CE495C2CBC5199B3B /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB56FC6797D3C84FBD527115D49009B4 /* SCVideoPlayerView.m */; };
+		696E411597FC18A6E9B93CDE165CD91F /* SCRecorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7667EEC709A8084777B4D4AE45505AEB /* SCRecorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A6DFF530EE25298F99403E1AA6C875B /* SCFilter+UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D6722FD6A3E199F681F65E4B97185700 /* SCFilter+UIImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B57BE9ED3885764AC7B0D10ACFFFE64 /* SCVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C302D300648AE39FF989EE4C8230 /* SCVideoConfiguration.m */; };
+		71414AF0264EB3C2606FF7E911C25F6B /* SCProcessingQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DA62B6CB6BB35D15461549DBE60946 /* SCProcessingQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71FF4D1E235E0AA9DD42C9B34F45C5C6 /* SCProcessingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3E4EB9199B6CA1642D4762490A8585 /* SCProcessingQueue.m */; };
+		72B4E99F66B496A642C5B25F85D9ADEC /* SCPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BAEFF0A1F8DC00AD8B9BF13634ED04 /* SCPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73979B1D1242715CFEB2A6733825E357 /* SCIOPixelBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 576237FEC7E4F271E6E30BF8D913D403 /* SCIOPixelBuffers.m */; };
+		75633C44751600D908248E2F6AE12919 /* SCContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3869B131AE497D65FA76746365062D33 /* SCContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		809885547715261D709226E6FBFAEF22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		8D27ED385100FB6956406253486756BE /* SCRecorderHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF9E08E8FE309BB391D16FB34A3A8CB /* SCRecorderHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FD6BB5AA984C852DDC20290861CB237 /* SCSwipeableFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A3F5691024CE089CDC2118C7F06C44 /* SCSwipeableFilterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904E2DAAA31B674F334D094B9AD4F901 /* SCRecorderToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E66DB33F60E803037E2DFF165BBA3 /* SCRecorderToolsView.m */; };
+		965FABC2651B8A56E97DD4B34D1460DD /* SCFilterAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3578477AD06933D0F134B948DC79D2 /* SCFilterAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E85D521D7B8FD1BEC5E8FF1446657C /* SCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC19D6626CBC565A248AF620E804447 /* SCFilter.m */; };
+		9A1F4BAA0AF98F45F11958CFD4BA4BA3 /* SCSampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F3B4FB13982E6A71D16B629239E7F /* SCSampleBufferHolder.m */; };
+		9B4F5B121E9702E988358A331924011D /* SCRecordSession_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B31523223DD0BAACA2F95A597727A5 /* SCRecordSession_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3C0253580C5B0582007FF3FE3CC573 /* Pods-PhotoVideoPlaygroundTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F31E74AD76D474CFA95C1652970FD8 /* Pods-PhotoVideoPlaygroundTests-dummy.m */; };
+		A2666F0C95EEE28C038C0A910DDF05CF /* Pods-PhotoVideoPlayground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2DBF938C2AB6596869EED301785F1 /* Pods-PhotoVideoPlayground-dummy.m */; };
+		A7935CE2A0DFC5B28096BD9CC79CF4F0 /* NSURL+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7973D96928F1091BC787D630789A33 /* NSURL+SCSaveToCameraRoll.m */; };
+		AA06296351C313EAC057010AC85E9914 /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FD757054FEF54F555B6937A813D63 /* SCImageView.m */; };
+		B272EDD918D03795A775784E14238600 /* SCPhotoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E61AC11731EDB2472102E096A3C6E0 /* SCPhotoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3650C5953785D147345BB6A9B4483C1 /* SCAudioTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8190F93923C07C26C2273CF86327FE98 /* SCAudioTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F74C289BCF8E7470E2FD946485EBC9 /* SCAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 34467F317034E5478B5DEFE4D6BC0B51 /* SCAssetExportSession.m */; };
+		B5DFB281262C1C799BC148969A011272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		B91D3CEEE8E7D03C3ED4B5146A5DBBF0 /* SCRecorderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6390180A80FAA532AC7FF67EE62341F6 /* SCRecorderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9D5869359C300F407FFD68AB88F7DCC /* SCMediaTypeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A18D2658C78210D9193F5E596C28B2 /* SCMediaTypeConfiguration.m */; };
+		BCBF1E583CAF24B87A586B00DE07C59F /* SCAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F15D1DCD5D19EE9BE416058A84CB842D /* SCAudioTools.m */; };
+		BD2B5E143492438C9FE8D14F5B266B7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		C5C93295FBF2EA0287DC6B3FD6AFC672 /* SCRecordSessionSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B54469AB8E3D3AE4B763FF38F84F32 /* SCRecordSessionSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C770F8793907E599C1E8ECDE7A91FF0C /* SCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB6C7ACB3B3DF0AEA0C7356067F72 /* SCPlayer.m */; };
+		CB0B044DA8B6FBC58E776E0F5F4B6B4B /* SCWeakSelectorTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 12903E714A502B4E06B40F5ECC41CE1D /* SCWeakSelectorTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB7D747C7220D156575E1B2F5A2BE640 /* SCPhotoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A9D05E824FF4484965E5300B006E02 /* SCPhotoConfiguration.m */; };
+		D0A7224C4DDF809BA393D7E8F9BBAB7A /* SCVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0059802FD5904F5C30071530A8DAB7F6 /* SCVideoPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3AD4567C30FB4E23A5AB97A4E31109E /* SCRecorderFocusTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7CE5A39E516D5E3AA4DE436DC103C1 /* SCRecorderFocusTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6497688FA37E4EFD202337A22AD94CC /* SCSaveToCameraRollOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C5E281B9D1BD56B79BA7087810F498 /* SCSaveToCameraRollOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D249F43045E03635E81785B1E9C516 /* SCFilterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 394569DB32D0AC665D8DCBE536FFFECB /* SCFilterAnimation.m */; };
+		D6EF560B8CE96E050162DA4438E44AEE /* SCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1275FFB2309C2343A926EFDAC728B0 /* SCImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE8CAC6385B32E5B76522DA03F1E358 /* SCFilter+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 943DF22A449CA619A805C6067E53A11C /* SCFilter+UIImage.m */; };
+		DFB1DD8C057A4BC4CD320B54C9F837DC /* SCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AE809688D87F40C8FD70765B6819AE /* SCContext.m */; };
+		E351916139E19A258910E592D77CDBEA /* SCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ED2AAEFE3192131EDEC44C2D6B2013 /* SCRecorder.m */; };
+		FC43690725584D6D45C279181FE689BD /* SCVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FECC8083D0DDE2B08463178C0378923 /* SCVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B954DF69EBE46EB1E6149061EE3AF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A69118938C4A211965F0713E271DB3BE;
+			remoteInfo = SCRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0059802FD5904F5C30071530A8DAB7F6 /* SCVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoPlayerView.h; path = Library/Sources/SCVideoPlayerView.h; sourceTree = "<group>"; };
+		06D0C302D300648AE39FF989EE4C8230 /* SCVideoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoConfiguration.m; path = Library/Sources/SCVideoConfiguration.m; sourceTree = "<group>"; };
+		0A0FD757054FEF54F555B6937A813D63 /* SCImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCImageView.m; path = Library/Sources/SCImageView.m; sourceTree = "<group>"; };
+		0B2E66DB33F60E803037E2DFF165BBA3 /* SCRecorderToolsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderToolsView.m; path = Library/Sources/SCRecorderToolsView.m; sourceTree = "<group>"; };
+		12903E714A502B4E06B40F5ECC41CE1D /* SCWeakSelectorTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCWeakSelectorTarget.h; path = Library/Sources/SCWeakSelectorTarget.h; sourceTree = "<group>"; };
+		1299DE83C681A569F440F6A6A8B8953D /* Pods-PhotoVideoPlaygroundTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhotoVideoPlaygroundTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1378176D598E8CC6E2B8ABB004B1E883 /* SCRecordSessionSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSessionSegment.m; path = Library/Sources/SCRecordSessionSegment.m; sourceTree = "<group>"; };
+		172F3B4FB13982E6A71D16B629239E7F /* SCSampleBufferHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSampleBufferHolder.m; path = Library/Sources/SCSampleBufferHolder.m; sourceTree = "<group>"; };
+		18AE6F9D11D6AE8019E59C23583562C0 /* Pods-PhotoVideoPlayground-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoVideoPlayground-frameworks.sh"; sourceTree = "<group>"; };
+		1A7973D96928F1091BC787D630789A33 /* NSURL+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+SCSaveToCameraRoll.m"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		1B6F71E31A301118CEA55FA38A72F73D /* Pods-PhotoVideoPlaygroundTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhotoVideoPlaygroundTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C21FEBC47D431C5BBED378F3D9DEC1C /* Pods-PhotoVideoPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoVideoPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E9E1C07235A32BF1DEB6DEF0FEF9DA7 /* Pods-PhotoVideoPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoVideoPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		2017A16B419996596C7F7228BB5B509E /* UIImage+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SCSaveToCameraRoll.m"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		208FB5083517106F147316796D9F49B2 /* SCAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAssetExportSession.h; path = Library/Sources/SCAssetExportSession.h; sourceTree = "<group>"; };
+		24C91EEE0E7B6C538B3B2D0CB200B118 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2A6C321C3469E0A3C339DE3B9B620326 /* SCWeakSelectorTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCWeakSelectorTarget.m; path = Library/Sources/SCWeakSelectorTarget.m; sourceTree = "<group>"; };
+		2B3187FAF9EBCB007294DA0183958064 /* SCRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorder.h; path = Library/Sources/SCRecorder.h; sourceTree = "<group>"; };
+		2C1275FFB2309C2343A926EFDAC728B0 /* SCImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCImageView.h; path = Library/Sources/SCImageView.h; sourceTree = "<group>"; };
+		2D435FE853F0E186E2E53079DAF38033 /* Pods-PhotoVideoPlaygroundTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoVideoPlaygroundTests-resources.sh"; sourceTree = "<group>"; };
+		3310C1FBC585DB2D3342A957AD64274F /* SCFilter+VideoComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+VideoComposition.h"; path = "Library/Sources/SCFilter+VideoComposition.h"; sourceTree = "<group>"; };
+		33A7BB94FE274D7BB20D159E3B79F68E /* Pods-PhotoVideoPlayground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PhotoVideoPlayground.modulemap"; sourceTree = "<group>"; };
+		34467F317034E5478B5DEFE4D6BC0B51 /* SCAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAssetExportSession.m; path = Library/Sources/SCAssetExportSession.m; sourceTree = "<group>"; };
+		34B54469AB8E3D3AE4B763FF38F84F32 /* SCRecordSessionSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSessionSegment.h; path = Library/Sources/SCRecordSessionSegment.h; sourceTree = "<group>"; };
+		3869B131AE497D65FA76746365062D33 /* SCContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCContext.h; path = Library/Sources/SCContext.h; sourceTree = "<group>"; };
+		3891C9ED412F7317265F56F739552065 /* SCRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCRecorder.framework; path = SCRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		394569DB32D0AC665D8DCBE536FFFECB /* SCFilterAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterAnimation.m; path = Library/Sources/SCFilterAnimation.m; sourceTree = "<group>"; };
+		39C5E281B9D1BD56B79BA7087810F498 /* SCSaveToCameraRollOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSaveToCameraRollOperation.h; path = Library/Sources/SCSaveToCameraRollOperation.h; sourceTree = "<group>"; };
+		3A7E1AE8CF10BC58C00356B33517C91C /* Pods-PhotoVideoPlayground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoVideoPlayground-umbrella.h"; sourceTree = "<group>"; };
+		3B8EB6C7ACB3B3DF0AEA0C7356067F72 /* SCPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPlayer.m; path = Library/Sources/SCPlayer.m; sourceTree = "<group>"; };
+		3C800DCC96A6BB720612132D4F77DF8C /* Pods_PhotoVideoPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PhotoVideoPlayground.framework; path = "Pods-PhotoVideoPlayground.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FECC8083D0DDE2B08463178C0378923 /* SCVideoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoConfiguration.h; path = Library/Sources/SCVideoConfiguration.h; sourceTree = "<group>"; };
+		4540FDAE52CF9A283B9E119FBD3E2CED /* Pods-PhotoVideoPlaygroundTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PhotoVideoPlaygroundTests.modulemap"; sourceTree = "<group>"; };
+		4C169D130258065C8882E28C5B503A17 /* SCMediaTypeConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCMediaTypeConfiguration.h; path = Library/Sources/SCMediaTypeConfiguration.h; sourceTree = "<group>"; };
+		4F8B08AA2B9E2143B3554C755D4E831E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5242719F379ECC5E2FFEEEBA684A9DAF /* SCFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilter.h; path = Library/Sources/SCFilter.h; sourceTree = "<group>"; };
+		574B0A489E0C52AABD850361FF179995 /* SCRecorderTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderTools.h; path = Library/Sources/SCRecorderTools.h; sourceTree = "<group>"; };
+		576237FEC7E4F271E6E30BF8D913D403 /* SCIOPixelBuffers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCIOPixelBuffers.m; path = Library/Sources/SCIOPixelBuffers.m; sourceTree = "<group>"; };
+		6390180A80FAA532AC7FF67EE62341F6 /* SCRecorderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderDelegate.h; path = Library/Sources/SCRecorderDelegate.h; sourceTree = "<group>"; };
+		63B31523223DD0BAACA2F95A597727A5 /* SCRecordSession_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession_Internal.h; path = Library/Sources/SCRecordSession_Internal.h; sourceTree = "<group>"; };
+		6527615877D0A94282B5D5AA74B3F378 /* SCIOPixelBuffers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCIOPixelBuffers.h; path = Library/Sources/SCIOPixelBuffers.h; sourceTree = "<group>"; };
+		668273EE0F3A10548C5EDCC0569C1C23 /* NSURL+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+SCSaveToCameraRoll.h"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		67701BFA4370BC3BD2361908A6B72F54 /* Pods-PhotoVideoPlayground-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhotoVideoPlayground-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6989521EB2C041ECB31C8D04759CC524 /* Pods-PhotoVideoPlayground-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoVideoPlayground-resources.sh"; sourceTree = "<group>"; };
+		7667EEC709A8084777B4D4AE45505AEB /* SCRecorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCRecorder-umbrella.h"; sourceTree = "<group>"; };
+		7B3578477AD06933D0F134B948DC79D2 /* SCFilterAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterAnimation.h; path = Library/Sources/SCFilterAnimation.h; sourceTree = "<group>"; };
+		7DE6526ABBD46380F9440FFE7AEA104B /* SCRecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCRecorder-dummy.m"; sourceTree = "<group>"; };
+		7E7CE5A39E516D5E3AA4DE436DC103C1 /* SCRecorderFocusTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderFocusTargetView.h; path = Library/Sources/SCRecorderFocusTargetView.h; sourceTree = "<group>"; };
+		8190F93923C07C26C2273CF86327FE98 /* SCAudioTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioTools.h; path = Library/Sources/SCAudioTools.h; sourceTree = "<group>"; };
+		81F31E74AD76D474CFA95C1652970FD8 /* Pods-PhotoVideoPlaygroundTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoVideoPlaygroundTests-dummy.m"; sourceTree = "<group>"; };
+		82DA62B6CB6BB35D15461549DBE60946 /* SCProcessingQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCProcessingQueue.h; path = Library/Sources/SCProcessingQueue.h; sourceTree = "<group>"; };
+		8303B9D46144C4D122765F470B3C5B8C /* SCRecordSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession.h; path = Library/Sources/SCRecordSession.h; sourceTree = "<group>"; };
+		83BC9674E4BFCCE9A34BDCD57862226A /* SCRecordSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSession.m; path = Library/Sources/SCRecordSession.m; sourceTree = "<group>"; };
+		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940493AD0AA6388780A6AD7AEC25E401 /* Pods_PhotoVideoPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PhotoVideoPlaygroundTests.framework; path = "Pods-PhotoVideoPlaygroundTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		943DF22A449CA619A805C6067E53A11C /* SCFilter+UIImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+UIImage.m"; path = "Library/Sources/SCFilter+UIImage.m"; sourceTree = "<group>"; };
+		9542501A88E5D96C293BB89526208EDA /* Pods-PhotoVideoPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoVideoPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		97F4E5C8CA0192B662D209471FA01B67 /* SCSampleBufferHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSampleBufferHolder.h; path = Library/Sources/SCSampleBufferHolder.h; sourceTree = "<group>"; };
+		9AA2DBF938C2AB6596869EED301785F1 /* Pods-PhotoVideoPlayground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoVideoPlayground-dummy.m"; sourceTree = "<group>"; };
+		A1E61AC11731EDB2472102E096A3C6E0 /* SCPhotoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPhotoConfiguration.h; path = Library/Sources/SCPhotoConfiguration.h; sourceTree = "<group>"; };
+		A5A18D2658C78210D9193F5E596C28B2 /* SCMediaTypeConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCMediaTypeConfiguration.m; path = Library/Sources/SCMediaTypeConfiguration.m; sourceTree = "<group>"; };
+		A6E9611DF7D3AB4148B5ABBD8599939D /* SCAudioConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioConfiguration.h; path = Library/Sources/SCAudioConfiguration.h; sourceTree = "<group>"; };
+		AD3E4EB9199B6CA1642D4762490A8585 /* SCProcessingQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCProcessingQueue.m; path = Library/Sources/SCProcessingQueue.m; sourceTree = "<group>"; };
+		AEF9E08E8FE309BB391D16FB34A3A8CB /* SCRecorderHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderHeader.h; path = Library/Sources/SCRecorderHeader.h; sourceTree = "<group>"; };
+		B1468E57377AF5617816CD892681D38A /* SCRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCRecorder.xcconfig; sourceTree = "<group>"; };
+		B1CD300C770A1F6D065A02F943EE333F /* SCFilterImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterImageView.h; path = Library/Sources/SCFilterImageView.h; sourceTree = "<group>"; };
+		B206563F3BB0FADBDBDF67C2E1E88866 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4FCF13F686F3BA53620D69F9C0CB6D9 /* SCSwipeableFilterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSwipeableFilterView.m; path = Library/Sources/SCSwipeableFilterView.m; sourceTree = "<group>"; };
+		C59412D4E384C44D351540B3AA2C9204 /* SCSaveToCameraRollOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSaveToCameraRollOperation.m; path = Library/Sources/SCSaveToCameraRollOperation.m; sourceTree = "<group>"; };
+		D32A98658CD8B3D4C85DB5DD5CFF9733 /* SCFilterImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterImageView.m; path = Library/Sources/SCFilterImageView.m; sourceTree = "<group>"; };
+		D4BAEFF0A1F8DC00AD8B9BF13634ED04 /* SCPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPlayer.h; path = Library/Sources/SCPlayer.h; sourceTree = "<group>"; };
+		D6722FD6A3E199F681F65E4B97185700 /* SCFilter+UIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+UIImage.h"; path = "Library/Sources/SCFilter+UIImage.h"; sourceTree = "<group>"; };
+		DB56FC6797D3C84FBD527115D49009B4 /* SCVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoPlayerView.m; path = Library/Sources/SCVideoPlayerView.m; sourceTree = "<group>"; };
+		E07A87FA067B1BF2CFB3197D35B22DD3 /* UIImage+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SCSaveToCameraRoll.h"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		E4AE809688D87F40C8FD70765B6819AE /* SCContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCContext.m; path = Library/Sources/SCContext.m; sourceTree = "<group>"; };
+		E5BE70535C81815530272BB86A621578 /* Pods-PhotoVideoPlaygroundTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoVideoPlaygroundTests-frameworks.sh"; sourceTree = "<group>"; };
+		E5FB413F138CB591EE1AD69311AADA19 /* SCRecorderToolsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderToolsView.h; path = Library/Sources/SCRecorderToolsView.h; sourceTree = "<group>"; };
+		E7A3F5691024CE089CDC2118C7F06C44 /* SCSwipeableFilterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSwipeableFilterView.h; path = Library/Sources/SCSwipeableFilterView.h; sourceTree = "<group>"; };
+		E819B4528AD84D324CE8FB802C5F6D8E /* SCRecorderTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderTools.m; path = Library/Sources/SCRecorderTools.m; sourceTree = "<group>"; };
+		E833961C309E1983856399D23D24B8C3 /* SCFilter+VideoComposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+VideoComposition.m"; path = "Library/Sources/SCFilter+VideoComposition.m"; sourceTree = "<group>"; };
+		EE650F17B2CEEDECC059A09E092BA52F /* SCRecorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCRecorder.modulemap; sourceTree = "<group>"; };
+		F083D3B56A4E579361FDF76351C97915 /* SCRecorderFocusTargetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderFocusTargetView.m; path = Library/Sources/SCRecorderFocusTargetView.m; sourceTree = "<group>"; };
+		F15D1DCD5D19EE9BE416058A84CB842D /* SCAudioTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioTools.m; path = Library/Sources/SCAudioTools.m; sourceTree = "<group>"; };
+		F2A9D05E824FF4484965E5300B006E02 /* SCPhotoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPhotoConfiguration.m; path = Library/Sources/SCPhotoConfiguration.m; sourceTree = "<group>"; };
+		F3ED2AAEFE3192131EDEC44C2D6B2013 /* SCRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorder.m; path = Library/Sources/SCRecorder.m; sourceTree = "<group>"; };
+		F4516CF827E6F722D7DDEB6DA8824D4D /* SCRecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCRecorder-prefix.pch"; sourceTree = "<group>"; };
+		F9B22F627E9CDE0C6B675CA32D65A5A9 /* Pods-PhotoVideoPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoVideoPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		FA0577F42816911AF9478471AB9C7AC4 /* SCAudioConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioConfiguration.m; path = Library/Sources/SCAudioConfiguration.m; sourceTree = "<group>"; };
+		FAC19D6626CBC565A248AF620E804447 /* SCFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilter.m; path = Library/Sources/SCFilter.m; sourceTree = "<group>"; };
+		FB9B6684C2436494B877B28478E75E17 /* Pods-PhotoVideoPlaygroundTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoVideoPlaygroundTests-umbrella.h"; sourceTree = "<group>"; };
+		FD847517790590F8E6579C663A5CA67C /* Pods-PhotoVideoPlayground-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhotoVideoPlayground-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3A172DCCC011D6C16872024BB4E8748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809885547715261D709226E6FBFAEF22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65A0B45D5132F19AC752007E4FEE374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DFB281262C1C799BC148969A011272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E848D5D6F5445E434838D6086B0C3E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291BFCBFBA4D7798161F0A57D82402A /* AVFoundation.framework in Frameworks */,
+				BD2B5E143492438C9FE8D14F5B266B7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2930CDCD7A34BEB1DD20B7B384D9E4EA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B08AA2B9E2143B3554C755D4E831E /* Info.plist */,
+				EE650F17B2CEEDECC059A09E092BA52F /* SCRecorder.modulemap */,
+				B1468E57377AF5617816CD892681D38A /* SCRecorder.xcconfig */,
+				7DE6526ABBD46380F9440FFE7AEA104B /* SCRecorder-dummy.m */,
+				F4516CF827E6F722D7DDEB6DA8824D4D /* SCRecorder-prefix.pch */,
+				7667EEC709A8084777B4D4AE45505AEB /* SCRecorder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCRecorder";
+			sourceTree = "<group>";
+		};
+		3B26D72C35B214A639E013919380390C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C800DCC96A6BB720612132D4F77DF8C /* Pods_PhotoVideoPlayground.framework */,
+				940493AD0AA6388780A6AD7AEC25E401 /* Pods_PhotoVideoPlaygroundTests.framework */,
+				3891C9ED412F7317265F56F739552065 /* SCRecorder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46C9C1E64C56C230002D0D1DD8279377 /* Pods-PhotoVideoPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				B206563F3BB0FADBDBDF67C2E1E88866 /* Info.plist */,
+				4540FDAE52CF9A283B9E119FBD3E2CED /* Pods-PhotoVideoPlaygroundTests.modulemap */,
+				1B6F71E31A301118CEA55FA38A72F73D /* Pods-PhotoVideoPlaygroundTests-acknowledgements.markdown */,
+				1299DE83C681A569F440F6A6A8B8953D /* Pods-PhotoVideoPlaygroundTests-acknowledgements.plist */,
+				81F31E74AD76D474CFA95C1652970FD8 /* Pods-PhotoVideoPlaygroundTests-dummy.m */,
+				E5BE70535C81815530272BB86A621578 /* Pods-PhotoVideoPlaygroundTests-frameworks.sh */,
+				2D435FE853F0E186E2E53079DAF38033 /* Pods-PhotoVideoPlaygroundTests-resources.sh */,
+				FB9B6684C2436494B877B28478E75E17 /* Pods-PhotoVideoPlaygroundTests-umbrella.h */,
+				1C21FEBC47D431C5BBED378F3D9DEC1C /* Pods-PhotoVideoPlaygroundTests.debug.xcconfig */,
+				9542501A88E5D96C293BB89526208EDA /* Pods-PhotoVideoPlaygroundTests.release.xcconfig */,
+			);
+			name = "Pods-PhotoVideoPlaygroundTests";
+			path = "Target Support Files/Pods-PhotoVideoPlaygroundTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B3F5B6130A42D4FF5A40889EF6A65D60 /* Pods */,
+				3B26D72C35B214A639E013919380390C /* Products */,
+				D085B7C738C0900F4611E4FF6CA55925 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AABCDED68A064394FB690BAE7560D601 /* SCRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				668273EE0F3A10548C5EDCC0569C1C23 /* NSURL+SCSaveToCameraRoll.h */,
+				1A7973D96928F1091BC787D630789A33 /* NSURL+SCSaveToCameraRoll.m */,
+				208FB5083517106F147316796D9F49B2 /* SCAssetExportSession.h */,
+				34467F317034E5478B5DEFE4D6BC0B51 /* SCAssetExportSession.m */,
+				A6E9611DF7D3AB4148B5ABBD8599939D /* SCAudioConfiguration.h */,
+				FA0577F42816911AF9478471AB9C7AC4 /* SCAudioConfiguration.m */,
+				8190F93923C07C26C2273CF86327FE98 /* SCAudioTools.h */,
+				F15D1DCD5D19EE9BE416058A84CB842D /* SCAudioTools.m */,
+				3869B131AE497D65FA76746365062D33 /* SCContext.h */,
+				E4AE809688D87F40C8FD70765B6819AE /* SCContext.m */,
+				5242719F379ECC5E2FFEEEBA684A9DAF /* SCFilter.h */,
+				FAC19D6626CBC565A248AF620E804447 /* SCFilter.m */,
+				D6722FD6A3E199F681F65E4B97185700 /* SCFilter+UIImage.h */,
+				943DF22A449CA619A805C6067E53A11C /* SCFilter+UIImage.m */,
+				3310C1FBC585DB2D3342A957AD64274F /* SCFilter+VideoComposition.h */,
+				E833961C309E1983856399D23D24B8C3 /* SCFilter+VideoComposition.m */,
+				7B3578477AD06933D0F134B948DC79D2 /* SCFilterAnimation.h */,
+				394569DB32D0AC665D8DCBE536FFFECB /* SCFilterAnimation.m */,
+				B1CD300C770A1F6D065A02F943EE333F /* SCFilterImageView.h */,
+				D32A98658CD8B3D4C85DB5DD5CFF9733 /* SCFilterImageView.m */,
+				2C1275FFB2309C2343A926EFDAC728B0 /* SCImageView.h */,
+				0A0FD757054FEF54F555B6937A813D63 /* SCImageView.m */,
+				6527615877D0A94282B5D5AA74B3F378 /* SCIOPixelBuffers.h */,
+				576237FEC7E4F271E6E30BF8D913D403 /* SCIOPixelBuffers.m */,
+				4C169D130258065C8882E28C5B503A17 /* SCMediaTypeConfiguration.h */,
+				A5A18D2658C78210D9193F5E596C28B2 /* SCMediaTypeConfiguration.m */,
+				A1E61AC11731EDB2472102E096A3C6E0 /* SCPhotoConfiguration.h */,
+				F2A9D05E824FF4484965E5300B006E02 /* SCPhotoConfiguration.m */,
+				D4BAEFF0A1F8DC00AD8B9BF13634ED04 /* SCPlayer.h */,
+				3B8EB6C7ACB3B3DF0AEA0C7356067F72 /* SCPlayer.m */,
+				82DA62B6CB6BB35D15461549DBE60946 /* SCProcessingQueue.h */,
+				AD3E4EB9199B6CA1642D4762490A8585 /* SCProcessingQueue.m */,
+				2B3187FAF9EBCB007294DA0183958064 /* SCRecorder.h */,
+				F3ED2AAEFE3192131EDEC44C2D6B2013 /* SCRecorder.m */,
+				6390180A80FAA532AC7FF67EE62341F6 /* SCRecorderDelegate.h */,
+				7E7CE5A39E516D5E3AA4DE436DC103C1 /* SCRecorderFocusTargetView.h */,
+				F083D3B56A4E579361FDF76351C97915 /* SCRecorderFocusTargetView.m */,
+				AEF9E08E8FE309BB391D16FB34A3A8CB /* SCRecorderHeader.h */,
+				574B0A489E0C52AABD850361FF179995 /* SCRecorderTools.h */,
+				E819B4528AD84D324CE8FB802C5F6D8E /* SCRecorderTools.m */,
+				E5FB413F138CB591EE1AD69311AADA19 /* SCRecorderToolsView.h */,
+				0B2E66DB33F60E803037E2DFF165BBA3 /* SCRecorderToolsView.m */,
+				8303B9D46144C4D122765F470B3C5B8C /* SCRecordSession.h */,
+				83BC9674E4BFCCE9A34BDCD57862226A /* SCRecordSession.m */,
+				63B31523223DD0BAACA2F95A597727A5 /* SCRecordSession_Internal.h */,
+				34B54469AB8E3D3AE4B763FF38F84F32 /* SCRecordSessionSegment.h */,
+				1378176D598E8CC6E2B8ABB004B1E883 /* SCRecordSessionSegment.m */,
+				97F4E5C8CA0192B662D209471FA01B67 /* SCSampleBufferHolder.h */,
+				172F3B4FB13982E6A71D16B629239E7F /* SCSampleBufferHolder.m */,
+				39C5E281B9D1BD56B79BA7087810F498 /* SCSaveToCameraRollOperation.h */,
+				C59412D4E384C44D351540B3AA2C9204 /* SCSaveToCameraRollOperation.m */,
+				E7A3F5691024CE089CDC2118C7F06C44 /* SCSwipeableFilterView.h */,
+				B4FCF13F686F3BA53620D69F9C0CB6D9 /* SCSwipeableFilterView.m */,
+				3FECC8083D0DDE2B08463178C0378923 /* SCVideoConfiguration.h */,
+				06D0C302D300648AE39FF989EE4C8230 /* SCVideoConfiguration.m */,
+				0059802FD5904F5C30071530A8DAB7F6 /* SCVideoPlayerView.h */,
+				DB56FC6797D3C84FBD527115D49009B4 /* SCVideoPlayerView.m */,
+				12903E714A502B4E06B40F5ECC41CE1D /* SCWeakSelectorTarget.h */,
+				2A6C321C3469E0A3C339DE3B9B620326 /* SCWeakSelectorTarget.m */,
+				E07A87FA067B1BF2CFB3197D35B22DD3 /* UIImage+SCSaveToCameraRoll.h */,
+				2017A16B419996596C7F7228BB5B509E /* UIImage+SCSaveToCameraRoll.m */,
+				2930CDCD7A34BEB1DD20B7B384D9E4EA /* Support Files */,
+			);
+			name = SCRecorder;
+			path = SCRecorder;
+			sourceTree = "<group>";
+		};
+		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */,
+				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3F5B6130A42D4FF5A40889EF6A65D60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AABCDED68A064394FB690BAE7560D601 /* SCRecorder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B97491AB6DE17D59DE1E53BE4D2EFB22 /* Pods-PhotoVideoPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				24C91EEE0E7B6C538B3B2D0CB200B118 /* Info.plist */,
+				33A7BB94FE274D7BB20D159E3B79F68E /* Pods-PhotoVideoPlayground.modulemap */,
+				67701BFA4370BC3BD2361908A6B72F54 /* Pods-PhotoVideoPlayground-acknowledgements.markdown */,
+				FD847517790590F8E6579C663A5CA67C /* Pods-PhotoVideoPlayground-acknowledgements.plist */,
+				9AA2DBF938C2AB6596869EED301785F1 /* Pods-PhotoVideoPlayground-dummy.m */,
+				18AE6F9D11D6AE8019E59C23583562C0 /* Pods-PhotoVideoPlayground-frameworks.sh */,
+				6989521EB2C041ECB31C8D04759CC524 /* Pods-PhotoVideoPlayground-resources.sh */,
+				3A7E1AE8CF10BC58C00356B33517C91C /* Pods-PhotoVideoPlayground-umbrella.h */,
+				1E9E1C07235A32BF1DEB6DEF0FEF9DA7 /* Pods-PhotoVideoPlayground.debug.xcconfig */,
+				F9B22F627E9CDE0C6B675CA32D65A5A9 /* Pods-PhotoVideoPlayground.release.xcconfig */,
+			);
+			name = "Pods-PhotoVideoPlayground";
+			path = "Target Support Files/Pods-PhotoVideoPlayground";
+			sourceTree = "<group>";
+		};
+		D085B7C738C0900F4611E4FF6CA55925 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97491AB6DE17D59DE1E53BE4D2EFB22 /* Pods-PhotoVideoPlayground */,
+				46C9C1E64C56C230002D0D1DD8279377 /* Pods-PhotoVideoPlaygroundTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1826190842B287D7423544F521F05F20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43815B3CBE32AA442E77230BDF8F17BB /* Pods-PhotoVideoPlaygroundTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511E675FF34AA9AB689D4115DF0D7377 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7B91421B1B39AC96B358928BBF4ED8 /* Pods-PhotoVideoPlayground-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BF2BC534E3CD555F899BEBCCB02659 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33186E9657B41836943BB296B0DFC044 /* NSURL+SCSaveToCameraRoll.h in Headers */,
+				5956FF18A99AC5CEF80E929D9FA4FB50 /* SCAssetExportSession.h in Headers */,
+				06B46ADD0952B30E2FC617E7BD53ABB1 /* SCAudioConfiguration.h in Headers */,
+				B3650C5953785D147345BB6A9B4483C1 /* SCAudioTools.h in Headers */,
+				75633C44751600D908248E2F6AE12919 /* SCContext.h in Headers */,
+				6A6DFF530EE25298F99403E1AA6C875B /* SCFilter+UIImage.h in Headers */,
+				3F013C00354D04D4618439BF61ED9467 /* SCFilter+VideoComposition.h in Headers */,
+				2E3EB27E8B276D35DD86664E1402B9A6 /* SCFilter.h in Headers */,
+				965FABC2651B8A56E97DD4B34D1460DD /* SCFilterAnimation.h in Headers */,
+				4E04A78B93B27E57F3D820F1BF59CD57 /* SCFilterImageView.h in Headers */,
+				D6EF560B8CE96E050162DA4438E44AEE /* SCImageView.h in Headers */,
+				4E3A03CE898403C952B76C03ECC2A97C /* SCIOPixelBuffers.h in Headers */,
+				66E0FFE4B1468B9A6E59AAF943DD00D1 /* SCMediaTypeConfiguration.h in Headers */,
+				B272EDD918D03795A775784E14238600 /* SCPhotoConfiguration.h in Headers */,
+				72B4E99F66B496A642C5B25F85D9ADEC /* SCPlayer.h in Headers */,
+				71414AF0264EB3C2606FF7E911C25F6B /* SCProcessingQueue.h in Headers */,
+				696E411597FC18A6E9B93CDE165CD91F /* SCRecorder-umbrella.h in Headers */,
+				58BCB546D0C530A2D581C900D2F9278F /* SCRecorder.h in Headers */,
+				B91D3CEEE8E7D03C3ED4B5146A5DBBF0 /* SCRecorderDelegate.h in Headers */,
+				D3AD4567C30FB4E23A5AB97A4E31109E /* SCRecorderFocusTargetView.h in Headers */,
+				8D27ED385100FB6956406253486756BE /* SCRecorderHeader.h in Headers */,
+				2D54CBE7ADA9473307E138B1D2ADC459 /* SCRecorderTools.h in Headers */,
+				62A8EFE16992112BB5857AAE5D219E7E /* SCRecorderToolsView.h in Headers */,
+				192CE7C6EE547EE6F10567C470234FE7 /* SCRecordSession.h in Headers */,
+				9B4F5B121E9702E988358A331924011D /* SCRecordSession_Internal.h in Headers */,
+				C5C93295FBF2EA0287DC6B3FD6AFC672 /* SCRecordSessionSegment.h in Headers */,
+				216E888ADFCFFBB848B26DBB9B982CA9 /* SCSampleBufferHolder.h in Headers */,
+				D6497688FA37E4EFD202337A22AD94CC /* SCSaveToCameraRollOperation.h in Headers */,
+				8FD6BB5AA984C852DDC20290861CB237 /* SCSwipeableFilterView.h in Headers */,
+				FC43690725584D6D45C279181FE689BD /* SCVideoConfiguration.h in Headers */,
+				D0A7224C4DDF809BA393D7E8F9BBAB7A /* SCVideoPlayerView.h in Headers */,
+				CB0B044DA8B6FBC58E776E0F5F4B6B4B /* SCWeakSelectorTarget.h in Headers */,
+				4269E5A647CE94D02C3BE5D273822F9E /* UIImage+SCSaveToCameraRoll.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83CC2896EED02ECDA65FBBCABCD86B22 /* Pods-PhotoVideoPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65AD7323EB8254A4B63BE3A7C38805D /* Build configuration list for PBXNativeTarget "Pods-PhotoVideoPlaygroundTests" */;
+			buildPhases = (
+				F66B9EE2AACF6F65860EFB895ABF8A4B /* Sources */,
+				B65A0B45D5132F19AC752007E4FEE374 /* Frameworks */,
+				1826190842B287D7423544F521F05F20 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PhotoVideoPlaygroundTests";
+			productName = "Pods-PhotoVideoPlaygroundTests";
+			productReference = 940493AD0AA6388780A6AD7AEC25E401 /* Pods_PhotoVideoPlaygroundTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A69118938C4A211965F0713E271DB3BE /* SCRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488FC3893C5DC5407236AFDDD4676994 /* Build configuration list for PBXNativeTarget "SCRecorder" */;
+			buildPhases = (
+				E1F4155D8003F7395D3068D80BF38596 /* Sources */,
+				E848D5D6F5445E434838D6086B0C3E55 /* Frameworks */,
+				A5BF2BC534E3CD555F899BEBCCB02659 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCRecorder;
+			productName = SCRecorder;
+			productReference = 3891C9ED412F7317265F56F739552065 /* SCRecorder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB05F769400F6EE54B2F161E7010D081 /* Pods-PhotoVideoPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79278BBFFEFF246567DECB87EA237B38 /* Build configuration list for PBXNativeTarget "Pods-PhotoVideoPlayground" */;
+			buildPhases = (
+				FDF721632B5DE7FDB4B0F0A5600A4FF1 /* Sources */,
+				B3A172DCCC011D6C16872024BB4E8748 /* Frameworks */,
+				511E675FF34AA9AB689D4115DF0D7377 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9E959D37DF3FB0E0A92CBCC65A72DB /* PBXTargetDependency */,
+			);
+			name = "Pods-PhotoVideoPlayground";
+			productName = "Pods-PhotoVideoPlayground";
+			productReference = 3C800DCC96A6BB720612132D4F77DF8C /* Pods_PhotoVideoPlayground.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3B26D72C35B214A639E013919380390C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB05F769400F6EE54B2F161E7010D081 /* Pods-PhotoVideoPlayground */,
+				83CC2896EED02ECDA65FBBCABCD86B22 /* Pods-PhotoVideoPlaygroundTests */,
+				A69118938C4A211965F0713E271DB3BE /* SCRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1F4155D8003F7395D3068D80BF38596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7935CE2A0DFC5B28096BD9CC79CF4F0 /* NSURL+SCSaveToCameraRoll.m in Sources */,
+				B4F74C289BCF8E7470E2FD946485EBC9 /* SCAssetExportSession.m in Sources */,
+				47BE9C2E24365A19F5ACD7607C35B234 /* SCAudioConfiguration.m in Sources */,
+				BCBF1E583CAF24B87A586B00DE07C59F /* SCAudioTools.m in Sources */,
+				DFB1DD8C057A4BC4CD320B54C9F837DC /* SCContext.m in Sources */,
+				DEE8CAC6385B32E5B76522DA03F1E358 /* SCFilter+UIImage.m in Sources */,
+				4105B14B644BAE058E10594660F11C35 /* SCFilter+VideoComposition.m in Sources */,
+				99E85D521D7B8FD1BEC5E8FF1446657C /* SCFilter.m in Sources */,
+				D6D249F43045E03635E81785B1E9C516 /* SCFilterAnimation.m in Sources */,
+				320A6B586F8DD01DB0710357A4FFC943 /* SCFilterImageView.m in Sources */,
+				AA06296351C313EAC057010AC85E9914 /* SCImageView.m in Sources */,
+				73979B1D1242715CFEB2A6733825E357 /* SCIOPixelBuffers.m in Sources */,
+				B9D5869359C300F407FFD68AB88F7DCC /* SCMediaTypeConfiguration.m in Sources */,
+				CB7D747C7220D156575E1B2F5A2BE640 /* SCPhotoConfiguration.m in Sources */,
+				C770F8793907E599C1E8ECDE7A91FF0C /* SCPlayer.m in Sources */,
+				71FF4D1E235E0AA9DD42C9B34F45C5C6 /* SCProcessingQueue.m in Sources */,
+				233E361ACF882D381E33F5E500ABD142 /* SCRecorder-dummy.m in Sources */,
+				E351916139E19A258910E592D77CDBEA /* SCRecorder.m in Sources */,
+				3C693BFC0E7EB87E38A6502A2682E7F8 /* SCRecorderFocusTargetView.m in Sources */,
+				0092C7561967A3652BA67D7765D51D47 /* SCRecorderTools.m in Sources */,
+				904E2DAAA31B674F334D094B9AD4F901 /* SCRecorderToolsView.m in Sources */,
+				5793E8C9F031254F0E9EBF364C8A6FF8 /* SCRecordSession.m in Sources */,
+				335AD6FD34E5969579E18DBD97D2CB44 /* SCRecordSessionSegment.m in Sources */,
+				9A1F4BAA0AF98F45F11958CFD4BA4BA3 /* SCSampleBufferHolder.m in Sources */,
+				0DB761E40AB1F3981FF6AEF4B285556A /* SCSaveToCameraRollOperation.m in Sources */,
+				4638DCC4B9B68E351BD87725F0B9BA8A /* SCSwipeableFilterView.m in Sources */,
+				6B57BE9ED3885764AC7B0D10ACFFFE64 /* SCVideoConfiguration.m in Sources */,
+				68067F3AEF01BC0CE495C2CBC5199B3B /* SCVideoPlayerView.m in Sources */,
+				5EB98DE2E405D219E09F97759DCC9588 /* SCWeakSelectorTarget.m in Sources */,
+				41E1589E6F5478564997139F9F794EFC /* UIImage+SCSaveToCameraRoll.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66B9EE2AACF6F65860EFB895ABF8A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3C0253580C5B0582007FF3FE3CC573 /* Pods-PhotoVideoPlaygroundTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF721632B5DE7FDB4B0F0A5600A4FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2666F0C95EEE28C038C0A910DDF05CF /* Pods-PhotoVideoPlayground-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD9E959D37DF3FB0E0A92CBCC65A72DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCRecorder;
+			target = A69118938C4A211965F0713E271DB3BE /* SCRecorder */;
+			targetProxy = 4B954DF69EBE46EB1E6149061EE3AF6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016B7C10CFE7DE3CFB74C55C60DB3E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B22F627E9CDE0C6B675CA32D65A5A9 /* Pods-PhotoVideoPlayground.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoVideoPlayground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoVideoPlayground/Pods-PhotoVideoPlayground.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhotoVideoPlayground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33AD73FA20398B4E56755B80441FB400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1468E57377AF5617816CD892681D38A /* SCRecorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCRecorder/SCRecorder.modulemap";
+				PRODUCT_NAME = SCRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F5D4943D5981A27C2EC66A08806562E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9542501A88E5D96C293BB89526208EDA /* Pods-PhotoVideoPlaygroundTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoVideoPlaygroundTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoVideoPlaygroundTests/Pods-PhotoVideoPlaygroundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhotoVideoPlaygroundTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		809938DD3EE140CA67E2DBD34DC1E1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1468E57377AF5617816CD892681D38A /* SCRecorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCRecorder/SCRecorder.modulemap";
+				PRODUCT_NAME = SCRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		815AF049CFCC0D9C7FE52F7FAC2666C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C21FEBC47D431C5BBED378F3D9DEC1C /* Pods-PhotoVideoPlaygroundTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoVideoPlaygroundTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoVideoPlaygroundTests/Pods-PhotoVideoPlaygroundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhotoVideoPlaygroundTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E386E9329BF840D53A6D5E9BF4D85E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9E1C07235A32BF1DEB6DEF0FEF9DA7 /* Pods-PhotoVideoPlayground.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoVideoPlayground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoVideoPlayground/Pods-PhotoVideoPlayground.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhotoVideoPlayground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488FC3893C5DC5407236AFDDD4676994 /* Build configuration list for PBXNativeTarget "SCRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809938DD3EE140CA67E2DBD34DC1E1B3 /* Debug */,
+				33AD73FA20398B4E56755B80441FB400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79278BBFFEFF246567DECB87EA237B38 /* Build configuration list for PBXNativeTarget "Pods-PhotoVideoPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E386E9329BF840D53A6D5E9BF4D85E7F /* Debug */,
+				016B7C10CFE7DE3CFB74C55C60DB3E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E65AD7323EB8254A4B63BE3A7C38805D /* Build configuration list for PBXNativeTarget "Pods-PhotoVideoPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815AF049CFCC0D9C7FE52F7FAC2666C0 /* Debug */,
+				4F5D4943D5981A27C2EC66A08806562E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
